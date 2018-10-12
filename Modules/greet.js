@@ -1,12 +1,16 @@
-function Greet() {
-    console.log('Hello');
+var English = require('./English');
+
+function Greet(message) {
+    console.log(message);
 }
 
-Greet();
+// Greet();
 
-//todo: have dynamic Greet() which can log messages in differnt languages
+//todo: have dynamic Greet() which can log messages in different languages
 /*
 Greet(Spanish) --> 'Hola'
 Greet(English) --> 'Hello'
 Greet(Hindi) --> 'Namaste'
 */
+
+Greet(English.hi);

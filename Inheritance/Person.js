@@ -1,10 +1,10 @@
-function Person(firstName, lastName) {
+var Person = function (firstName, lastName) {
     this.firstName = firstName;
     this.lastName = lastName;
     this.greet = function () {
         console.log(this.firstName + ' said hello!');
     }
-}
+};
 
 /*
 Prototype: In JS, every object has a hidden object, called as prototype object
